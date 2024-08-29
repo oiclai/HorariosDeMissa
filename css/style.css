@@ -137,7 +137,7 @@
     /* 'aumentou o espaço' */
     text-align: center;
     /* MUITO IMPORTANTE deixou o texto em si no centro */
-    padding: 0 90px;
+    /* padding: 0 90px; */
   }
   
   .banner .banner-texto h1 {
@@ -282,7 +282,8 @@
   
   .depoimentos .item:hover {
     background-color: #b08968;
-    margin-top: 5px;
+    transform: scale(1.05);
+    /* margin-top: 5px; */
     /* efeito subindo quando passa o cursor */
   }
   
@@ -338,93 +339,65 @@
     color: #cbe18e;
     text-decoration: underline;
   }
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  @media (max-width: 768px) {
-    nav ul {
-      flex-direction: column;
-      align-items: flex-start;
-    }
-  
-    .banner {
-      flex-direction: column;
-    }
-  
-    .banner .banner-texto {
-      margin: 100px 0;
-      padding: 0 30px;
-    }
-  
-    .banner .banner-texto h1 {
-      font-size: 50px;
-    }
-  
-    .main1 .main1-img iframe {
-      width: 100%;
-      height: auto;
-      margin-left: 0;
-    }
-  
-    .depoimentos .cards {
+
+
+
+
+
+
+
+
+
+
+
+
+  @media (max-width: 950px) {
+    .main1 .container {
       flex-direction: column;
       align-items: center;
     }
-  
-    .depoimentos .item {
-      width: 100%;
+
+    .main1 .main1-text, 
+    .main1 .main1-img {
+      width: 100%; /* A largura de ambos ocupará 100% do contêiner */
+      padding: 0; /* Remover o padding lateral para alinhar melhor */
+    }
+
+    .main1 .main1-img img {
+      margin-bottom: 20px; /* Adicionar espaço entre a imagem e o texto */
     }
   }
+
+
+
+
   
-  /*dias da semana*/
-  /* deixar os card em quadrados*/
-  .dias h3 {
-    text-align: center;
-  }
-  
-  .dias .container>p {
-    text-align: center;
-  }
-  
-  .dias .cards {
-    display: flex;
-    justify-content: center;
-    margin-top: 20 px;
-    flex-wrap: wrap;
-  }
-  
-  .dias .item {
-    background-color: #b4c187;
-    margin: 15px;
-    border-radius: 25px;
-    width: 200px;
-    right: 50px;
-    padding: 28px;
-    transition: 0.3s;
-  }
-  
-  .dias .item:hover {
-    background-color: #dde5b6;
-  }
-  
-  .material-symbols-outlined {
-    background-color: #e5f3e2;
-    color: #652f59;
-    border-radius: 8px;
-  }
-  .container .material-symbols-outlined{
-    color: #d67a96;
-    width: 20px;
+  @media (max-width: 550px) {
+    .banner .banner-texto h1{
+      font-size: 50px;
+    }
+    .main1 .container {
+      padding: 0 10px; /* Reduz o padding para telas muito pequenas */
+    }
+
+    .main1 .main1-text h3 {
+      font-size: 35px; /* Reduz o tamanho da fonte do título */
+      text-align: center;
+    }
+
+    .main1 .main1-text p {
+      font-size: 14px; /* Reduz o tamanho da fonte do parágrafo */
+      margin: 10px 0 30px 0; 
+      text-align: center;
+    }
+
+    .main1 .main1-img img {
+      border-radius: 15px; 
+      width: 50%;
+    }
+    .map-frame {
+      width: 50%; 
+      margin-left: 0; /* Remove o margin-left para centralizar o iframe */
+      height: 250px; /* Ajusta a altura para telas menores */
+    }
   }
