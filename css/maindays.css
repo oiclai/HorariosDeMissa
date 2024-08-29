@@ -37,11 +37,9 @@
   }
   h4 {
     font-size: 35px;
-    color: #80914b
   }
   h5 {
     font-size: 25px;
-    color: #bdab92
   }
   
   p {
@@ -227,4 +225,52 @@
     margin: 10px 0 50px 0;
     color: #0000009c;
   }
- 
+
+
+ /*<!-- tentativa de responsiividade -->*/
+
+ /* Responsive Layout */
+ @media all and (max-width: 768px) {
+   /* Ajustes para telas menores que 768px */
+  
+
+   .zonas-text {
+     text-align: center;
+   }
+
+   .column1, .column2 {
+     width: 100%;
+     margin-bottom: 20px;
+   }
+
+   table {
+     width: 100%;
+     border-collapse: collapse;
+   }
+
+   td {
+     display: block;
+     text-align: left;
+     padding: 10px;
+     border: 1px solid #ddd;
+   }
+ }
+
+ /* Ajustes para telas menores que 480px */
+ @media screen and (max-width: 480px) {
+   .banner-texto h3 {
+     font-size: 25px;
+   }
+
+   .banner-texto p {
+     font-size: 5px;
+   }
+
+   .column1, .column2 {
+     font-size: 30px;
+   }
+
+   td {
+     font-size: 12px;
+   }
+ }
