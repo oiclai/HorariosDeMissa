@@ -14,7 +14,7 @@ section{
     align-items: center;
     
     width: 100%;
-    background: url(img/gptigr.jpeg) no-repeat;  
+    background: url(../img/gptigr.jpeg) no-repeat;  
     /*a combinaçao das duas propriedades abaixo vai fazer com que a imagem ocupe TOTALMENTE o elemento 'section'.*/
     background-size: cover;
     background-position: center;
