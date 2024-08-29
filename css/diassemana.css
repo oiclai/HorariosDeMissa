@@ -1,332 +1,332 @@
 * {
-    font-family: "Lora", serif;
-  
-    margin: 0;
-    /*espaçamento externo */
-    padding: 0;
-    /*espaçamento interno */
-    text-decoration: none;
-    /*sem underline link */
-    box-sizing: border-box;
-    /*alterar a propriedade padrão da box model */
-    outline: none;
-    /*larg, estilo e cor do contorno */
-  
-  }
-  
-  body {
-    background-color: #c8c9cb31;
-  }
-  
-  /* header */
-  /* header */
-  /* header */
-  /* header */
-  /* header */
-  /* header */
-  /* header */
-  section,
-  footer {
-    padding: 55px 0;
-    /* 55 up e down, 0 left right */
-  }
-  
-  h3 {
-    font-size: 50px;
-  }
-  
-  p {
-    color: #0000009c;
-  }
-  
-  .container-header {
-    width: 100wh;
-    /* larg max */
-    margin: 0 auto;
-    /* 0 pra up down Auto p left right */
-    padding: 0 5%;
-    background-color: rgb(211, 204, 194, 0.8);
-  }
-  
-  .container {
-    max-width: 1400px;
-    /* larg max */
-    margin: 0 auto;
-    /* 0 pra up down Auto p left right */
-    padding: 0 5%;
-  }
-  
-  .btn {
-    /* icone do 'contato' */
-    background-color: #bbc191;
-    color: white;
-    padding: 15px 20px;
-    border-radius: 10px;
-    cursor: pointer;
-    /* cursor do mouse como um "ponteiro" sobre x elemento. */
-    display: inline-block;
-    /* comportamento de inline block */
-    transition: 0.3s;
-    /* transiçao + suave do hover */
-  }
-  
-  .btn:hover {
-    background-color: #80914b;
-  }
-  
-  header {
-    background-position: center;
-    /*  img no centro */
-    background-size: cover;
-    /* ocupa todo heitgh e width disponivel */
-    background-attachment: fixed;
-    /* fixada no fundo */
-  
-  }
-  
-  nav {
-    display: flex;
-    align-items: center;
-    /* tds elementos no centro */
-    justify-content: space-between;
-    /* espaço elementos (conteudo da caixa) */
-    padding-top: 30px;
-  }
-  
+  font-family: "Lora", serif;
+
+  margin: 0;
+  /*espaçamento externo */
+  padding: 0;
+  /*espaçamento interno */
+  text-decoration: none;
+  /*sem underline link */
+  box-sizing: border-box;
+  /*alterar a propriedade padrão da box model */
+  outline: none;
+  /*larg, estilo e cor do contorno */
+
+}
+
+body {
+  background-color: #c8c9cb31;
+}
+
+/* header */
+/* header */
+/* header */
+/* header */
+/* header */
+/* header */
+/* header */
+section,
+footer {
+  padding: 55px 0;
+  /* 55 up e down, 0 left right */
+}
+
+h3 {
+  font-size: 50px;
+}
+
+p {
+  color: #0000009c;
+}
+
+.container-header {
+  width: 100wh;
+  /* larg max */
+  margin: 0 auto;
+  /* 0 pra up down Auto p left right */
+  padding: 0 5%;
+  background-color: rgb(211, 204, 194, 0.8);
+}
+
+.container {
+  max-width: 1400px;
+  /* larg max */
+  margin: 0 auto;
+  /* 0 pra up down Auto p left right */
+  padding: 0 5%;
+}
+
+.btn {
+  /* icone do 'contato' */
+  background-color: #bbc191;
+  color: white;
+  padding: 15px 20px;
+  border-radius: 10px;
+  cursor: pointer;
+  /* cursor do mouse como um "ponteiro" sobre x elemento. */
+  display: inline-block;
+  /* comportamento de inline block */
+  transition: 0.3s;
+  /* transiçao + suave do hover */
+}
+
+.btn:hover {
+  background-color: #80914b;
+}
+
+header {
+  background-position: center;
+  /*  img no centro */
+  background-size: cover;
+  /* ocupa todo heitgh e width disponivel */
+  background-attachment: fixed;
+  /* fixada no fundo */
+
+}
+
+nav {
+  display: flex;
+  align-items: center;
+  /* tds elementos no centro */
+  justify-content: space-between;
+  /* espaço elementos (conteudo da caixa) */
+  padding-top: 30px;
+}
+
+nav ul {
+  display: flex;
+  align-items: center;
+}
+
+nav ul a {
+  /* mexendo nos links */
+  color: white;
+  margin: 0 25px;
+  text-transform: uppercase;
+  /* CAIXA ALTA */
+  font-size: 14px;
+  display: block;
+  /* se comportar que nem elementos de bloco( a tag A tem display inline por padrao) */
+}
+
+nav ul a:not(.btn)::after {
+  /*excluindo a classe btn desse comando*/
+  /* efeito do tracinho azul aparecendo no link */
+  content: "";
+  /* nao precisa colocar nada em content nesse caso*/
+  background-color: #c4cea1;
+  height: 3px;
+  width: 0%;
+  /*define se a linha vai estar em 100% ou 0% da palavra*/
+  display: block;
+  transition: 0.3s;
+}
+
+nav ul a:hover::after {
+  /*definindo que so quero o traço quando tiver hover*/
+  width: 100%;
+}
+
+.banner {
+  display: flex;
+  justify-content: center;
+}
+
+.banner .banner-texto {
+  margin: 150px;
+  /* 'aumentou o espaço' */
+  text-align: center;
+  /* MUITO IMPORTANTE deixou o texto em si no centro */
+  padding: 0 90px;
+}
+
+.banner .banner-texto h1 {
+  font-size: 90px;
+  color: #e8e8e8;
+  font-weight: lighter;
+
+}
+
+.banner .banner-texto p {
+  color: #0000009c;
+  font-size: 20px;
+  font-weight: lighter;
+  /* ficar mais clarinho */
+  margin: 18px 0;
+  background-color: rgba(245, 245, 245, 0.4);
+  border-radius: 6px;
+}
+
+/* header */
+/* header */
+/* header */
+/* header */
+/* header */
+/* header */
+/* header */
+
+
+/* main 1 */
+/* main 1 */
+/* main 1 */
+/* main 1 */
+/* main 1 */
+/* main 1 */
+.main1 .container {
+  display: flex;
+  align-items: center;
+  gap: 30px;
+}
+
+.main1 .main1-text {
+  width: 50%;
+  /* 50/50 img e text */
+  padding: 0 40px;
+}
+
+.main1 .main1-text h3 {
+  font-size: 55px;
+  color: black;
+  /* ajeitar esse pq n ta funcionando */
+  font-weight: lighter;
+
+}
+
+.main1 .main1-text p {
+  margin: 10px 0 50px 0;
+  color: #0000009c;
+}
+
+.main1 .main1-img {
+  width: 50%;
+}
+
+.main1 .main1-img img {
+  width: 100%;
+  /* vai ocupar 100% do 'pai', que eh o de cima */
+  border-radius: 30px;
+}
+
+
+
+
+
+
+
+/*footer  */
+/*footer  */
+/*footer  */
+/*footer  */
+/*footer  */
+.footer {
+  background-color: rgba(187, 193, 145, 0.8);
+}
+
+.footer h3,
+.footer p {
+  text-align: center;
+  color: white;
+  font-weight: lighter;
+}
+
+.footer .container .icon {
+  text-align: center;
+  font-size: 40px;
+}
+
+.footer .container .icon i {
+  transition: 0.3s;
+  margin: 15px 25px;
+  color: whitesmoke
+}
+
+.footer .container .icon i:hover {
+  color: #adc178;
+}
+
+.footer p a {
+  color: whitesmoke;
+  text-decoration: none;
+}
+
+.footer .container p a:hover {
+  color: #cbe18e;
+  text-decoration: underline;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media (max-width: 768px) {
   nav ul {
-    display: flex;
-    align-items: center;
+    flex-direction: column;
+    align-items: flex-start;
   }
+
+ 
+
+ 
   
-  nav ul a {
-    /* mexendo nos links */
-    color: white;
-    margin: 0 25px;
-    text-transform: uppercase;
-    /* CAIXA ALTA */
-    font-size: 14px;
-    display: block;
-    /* se comportar que nem elementos de bloco( a tag A tem display inline por padrao) */
-  }
-  
-  nav ul a:not(.btn)::after {
-    /*excluindo a classe btn desse comando*/
-    /* efeito do tracinho azul aparecendo no link */
-    content: "";
-    /* nao precisa colocar nada em content nesse caso*/
-    background-color: #c4cea1;
-    height: 3px;
-    width: 0%;
-    /*define se a linha vai estar em 100% ou 0% da palavra*/
-    display: block;
-    transition: 0.3s;
-  }
-  
-  nav ul a:hover::after {
-    /*definindo que so quero o traço quando tiver hover*/
+
+  .depoimentos .item {
     width: 100%;
   }
-  
-  .banner {
-    display: flex;
-    justify-content: center;
-  }
-  
-  .banner .banner-texto {
-    margin: 150px;
-    /* 'aumentou o espaço' */
-    text-align: center;
-    /* MUITO IMPORTANTE deixou o texto em si no centro */
-    padding: 0 90px;
-  }
-  
-  .banner .banner-texto h1 {
-    font-size: 90px;
-    color: #e8e8e8;
-    font-weight: lighter;
-  
-  }
-  
-  .banner .banner-texto p {
-    color: #0000009c;
-    font-size: 20px;
-    font-weight: lighter;
-    /* ficar mais clarinho */
-    margin: 18px 0;
-    background-color: rgba(245, 245, 245, 0.4);
-    border-radius: 6px;
-  }
-  
-  /* header */
-  /* header */
-  /* header */
-  /* header */
-  /* header */
-  /* header */
-  /* header */
-  
-  
-  /* main 1 */
-  /* main 1 */
-  /* main 1 */
-  /* main 1 */
-  /* main 1 */
-  /* main 1 */
-  .main1 .container {
-    display: flex;
-    align-items: center;
-    gap: 30px;
-  }
-  
-  .main1 .main1-text {
-    width: 50%;
-    /* 50/50 img e text */
-    padding: 0 40px;
-  }
-  
-  .main1 .main1-text h3 {
-    font-size: 55px;
-    color: black;
-    /* ajeitar esse pq n ta funcionando */
-    font-weight: lighter;
-  
-  }
-  
-  .main1 .main1-text p {
-    margin: 10px 0 50px 0;
-    color: #0000009c;
-  }
-  
-  .main1 .main1-img {
-    width: 50%;
-  }
-  
-  .main1 .main1-img img {
-    width: 100%;
-    /* vai ocupar 100% do 'pai', que eh o de cima */
-    border-radius: 30px;
-  }
-  
-  
-  
-  
-  
-  
-  
-  /*footer  */
-  /*footer  */
-  /*footer  */
-  /*footer  */
-  /*footer  */
-  .footer {
-    background-color: rgba(187, 193, 145, 0.8);
-  }
-  
-  .footer h3,
-  .footer p {
-    text-align: center;
-    color: white;
-    font-weight: lighter;
-  }
-  
-  .footer .container .icon {
-    text-align: center;
-    font-size: 40px;
-  }
-  
-  .footer .container .icon i {
-    transition: 0.3s;
-    margin: 15px 25px;
-    color: whitesmoke
-  }
-  
-  .footer .container .icon i:hover {
-    color: #adc178;
-  }
-  
-  .footer p a {
-    color: whitesmoke;
-    text-decoration: none;
-  }
-  
-  .footer .container p a:hover {
-    color: #cbe18e;
-    text-decoration: underline;
-  }
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  @media (max-width: 768px) {
-    nav ul {
-      flex-direction: column;
-      align-items: flex-start;
-    }
-  
-   
-  
-   
-    
-  
-    .depoimentos .item {
-      width: 100%;
-    }
-  }
-  
-  /*dias da semana*/
-  /* deixar os card em quadrados*/
-  .dias h3 {
-    text-align: center;
-  }
-  
-  .dias .container>p {
-    text-align: center;
-  }
-  
-  .dias .box {
-    display: flex;
-    justify-content: center;
-    margin-top: 20 px;
-    flex-wrap: wrap;
-  }
-  
-  .dias .topico {
-    background-color: #b4c187;
-    margin: 15px;
-    border-radius: 25px;
-    width: 200px;
-    right: 50px;
-    padding: 28px;
-    transition: 0.3s;
-  }
-  
-  .dias .topico:hover {
-    background-color: #dde5b6;
-  }
-  
-  .material-symbols-outlined {
-    border-radius: 8px;
-  }
-  .container .material-symbols-outlined{
-    color: #d67a96;
-    width: 20px;
-  }
-  .dias-texto h1{
-    color: #9f7a5b;
-    text-align: center;
-  }
-  .dias .container{
-    font-size: 18px;
-    margin-bottom:20px;
-  }
+}
+
+/*dias da semana*/
+/* deixar os card em quadrados*/
+.dias h3 {
+  text-align: center;
+}
+
+.dias .container>p {
+  text-align: center;
+}
+
+.dias .box {
+  display: flex;
+  justify-content: center;
+  margin-top: 20 px;
+  flex-wrap: wrap;
+}
+
+.dias .topico {
+  background-color: #b4c187;
+  margin: 15px;
+  border-radius: 25px;
+  width: 200px;
+  right: 50px;
+  padding: 28px;
+  transition: 0.3s;
+}
+
+.dias .topico:hover {
+  background-color: #dde5b6;
+}
+
+.material-symbols-outlined {
+  border-radius: 8px;
+}
+.container .material-symbols-outlined{
+  color: #d67a96;
+  width: 20px;
+}
+.dias-texto h1{
+  color: #9f7a5b;
+  text-align: center;
+}
+.dias .container{
+  font-size: 18px;
+  margin-bottom:20px;
+}
