@@ -5,4 +5,4 @@ A essência do projeto esta na praticidade do usuário acessar e se informar qua
 
 Para acessar o site, clique em [**Horários de Missa**](https://oiclai.github.io/HorariosDeMissa/)
 
-### **Discentes:** [Mariana Sarinho](https://github.com/marisarinho) (20241370011), [Maria Clara](https://github.com/euclaraalmeida) (20241370025) e [Clara Alcântara](https://github.com/oiclai) (20241370021)
+#### **Discentes:** [Mariana Sarinho](https://github.com/marisarinho) (20241370011), [Maria Clara](https://github.com/euclaraalmeida) (20241370025) e [Clara Alcântara](https://github.com/oiclai) (20241370021)
