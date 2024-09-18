@@ -23,23 +23,17 @@
     <!-- implementação da fonte-->
    <style> * {
         font-family: "Lora", serif;
-      
         margin: 0;
-        /*espaçamento externo */
         padding: 0;
-        /*espaçamento interno */
         text-decoration: none;
-        /*sem underline link */
         box-sizing: border-box;
-        /*alterar a propriedade padrão da box model */
         outline: none;
-        /*larg, estilo e cor do contorno */
       } </style>
   <!-- header-->
-  <header class="bg-[url('img/gptigr.jpeg')]"><!--tag semantica-->
+  <header class="bg-[url('img/gptigr.jpeg')]"> <!--tag semantica-->
     <!--container-->
     <div class='container-header'><!--agrupar itens-->
-      <nav class="flex items-center justify-between pt-[30px]">
+      <nav class="flex items-center flex justify-between pt-[30px]">
         <!-- display flex no <nav>, justify content: space-between; align-items: center;  padding-top: 30px;-->
         <h2>
         </h2>
@@ -50,8 +44,8 @@
           <a href='diassemana.html' class='text-white text-sm mt-0 mb-5'>Voltar</a>
         </ul>
       </nav>
-      <section class='banner'><!--tag semantica seçao -->
-        <div class='banner-texto'>
+      <section class='banner flex justify-center'><!--tag semantica seçao -->
+        <div class='banner-texto m-[35px] text-center pt-0 pb-[90px]'>
           <h3 class="font-bold text-[#535845] text-[50px]">MISSAS DA SEGUNDA-FEIRA</h3>
           <!--no h3, negrito (strong), cor do texto #535845 e tamanho do texto 50px -->
           <p class="text-[25px] text-[#0000009c] mt-[40px] mb-0">Informações organizadas por <strong class="font-bold text-[#80914b]">turnos</strong> e <strong class="font-bold text-[#80914b]">zonas da cidade</strong></p>
@@ -67,7 +61,7 @@
 <!-- SECTION ZONA LESTE/ PRAIA-->
   <section class='zonas bg-[#f1efed]'>
     <!--container-->
-    <div class='container max-w-[1400px] mt-0 mb-auto pt-0 pb-[5/100] justify-items-center items-center'>
+    <div class='container max-w-[1400px] mt-0 mb-auto pt-0 pb-[5/100] flex justify-items-center flex items-center'>
         <!-- .container: max-width: 1400px; margin: 0 auto; padding: 0 5%; -->
       <div class='zonas-text w-6/12 pt-0 pb-10'>
         <div class="column1 grid grid-cols-1 grid gap-[60px]">
@@ -158,9 +152,9 @@
   <!--SECTION ZONA NORTE-->
   <section class='zonas bg-[#ccd5ae]'>
     <!--container-->
-    <div class='container max-w-[1400px] mt-0 mb-auto pt-0 pb-[5%]'>
+    <div class='container max-w-[1400px] mt-0 mb-auto pt-0 pb-[5/100] flex justify-items-center flex items-center'>
       <div class='zonas-text w-6/12	pt-0 pb-10'>
-        <div class="column1 grid grid-cols-1 gap-[60px]">
+        <div class="column1 grid grid-cols-1 grid gap-[60px]">
             <h4 class="text-[#796858] font-bold text-[35px]">Zona Norte</h4>
             <h5 class="mb-1 text-[#718352] font-bold text-[25px]">Turno da Manhã</h5>
             </div>
@@ -185,7 +179,7 @@
                 </tbody>
             </table>
         </div>
-        <div class="column2 grid grid-cols-1">
+        <div class="column2 grid grid-cols-1 grid gap-[60px]">
             <h5 class="mb-1 mt-3.5 text-[#718352] font-bold text-[25px]">Turno da Tarde/ Noite</h5>
             <table class="table-auto">
                 <thead></thead>
@@ -221,9 +215,9 @@
   <!--SECTON ZONA OESTE-->
   <section class='zonas bg-[#f4f7db]'>
     <!--container-->
-    <div class='container max-w-[1400px] mt-0 mb-auto pt-0 pb-[5%]'>
+    <div class='container max-w-[1400px] mt-0 mb-auto pt-0 pb-[5/100] flex justify-items-center flex items-center'>
       <div class='zonas-text w-6/12	pt-0 pb-10'>
-        <div class="column1 grid grid-cols-1 gap-[60px]">
+        <div class="column1 grid grid-cols-1 grid gap-[60px]">
             <h4 class="text-[#cc9766] font-bold text-[35px]">Zona Oeste</h4>
             <h5 class="mb-1 text-[#af8f7d] font-bold text-[25px]">Turno da Manhã</h5>
             </div>
@@ -238,7 +232,7 @@
                 </tbody>
             </table>
         </div>
-        <div class="column2 grid grid-cols-1">
+        <div class="column2 grid grid-cols-1 grid gap-[60px]">
             <h5 class="mb-1 mt-3.5 text-[#af8f7d] font-bold text-[25px]">Turno da Tarde/ Noite</h5>
             <table class="table-auto">
                 <thead></thead>
@@ -249,7 +243,7 @@
                         <td class="text-[#9c7a5e] text-left p-[10px]">Jaguaribe</td>
                     </tr>
                     <tr>
-                        <td class="bg-[#ddcec598] text-left [10px]">19h30</td>
+                        <td class="bg-[#ddcec598] text-left p-[10px]">19h30</td>
                         <td class="p-[10px] text-left">Par. Sagrado Coração de Jesus - Santuário N. Sra. das Graças</td>
                         <td class="text-[#9c7a5e] text-left p-[10px]">Mandacaru</td>
                     </tr>
@@ -264,9 +258,9 @@
   <!-- SECTION ZONA SUL-->
   <section class="zonas bg-[#c0d3c4]">
     <!--container-->
-    <div class='container max-w-[1400px] mt-0 mb-auto pt-0 pb-[5%]'>
+    <div class='container max-w-[1400px] mt-0 mb-auto pt-0 pb-[5/100] flex justify-items-center flex items-center'>
       <div class='zonas-text w-6/12 pt-0 pb-10'>
-        <div class="column1 grid grid-cols-1 gap-[60px]">
+        <div class="column1 grid grid-cols-1 grid gap-[60px]">
             <h4 class="text-[#223b27] font-bold text-[35px]">Zona Sul</h4>
             <h5 class="mb-1 text-[#415d43] font-bold text-[25px]">Turno da Manhã</h5>
             </div>
@@ -291,7 +285,7 @@
                 </tbody>
             </table>
         </div>
-        <div class="column2 grid grid-cols-1">
+        <div class="column2 grid grid-cols-1 grid gap-[60px]">
             <h5 class="mb-1 mt-3.5 text-[#415d43] font-bold text-[25px]">Turno da Tarde/ Noite</h5>
             <table class="table-auto">
                 <thead></thead>
