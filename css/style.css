@@ -81,7 +81,7 @@ header {
   /*  img no centro */
   background-size: cover;
   /* ocupa todo heitgh e width disponivel */
-  background-attachment: fixed;
+  /* background-attachment: fixed; */
   /* fixada no fundo */
 
 }
