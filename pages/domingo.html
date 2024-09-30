@@ -17,8 +17,28 @@
   <link rel="stylesheet"
     href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" />
     <script src="https://cdn.tailwindcss.com"></script> <!--MUDANÇA-->
+    <script>
+        tailwind.config = {
+          theme: {
+            extend: {
+              colors: {
+                'pale-orange': '#eee5d9',
+                'grayish-orange': '#bdab92',
+                'desaturated-dark-green': '#718352',
+                'dark-green': '#688e26',
+                'extra-light-green': '#d7e6a998',
+                'desaturated-dark-orange': '#af8f7d',
+                'extra-light-grayish-orange': '#ddcec598',
+                'dark-orange': '#9c7a5e',
+                'very-dark-grayish-lime-green': '#415d43',
+                'grayish-lime-green': '#3b776098',
+                'very-dark-cyan':'#136f3c',
+              }
+            }
+          }
+        }
+    </script>
 </head>
-
 <body class="bg-[#c8c9cb31] font-['Lora']">
     <!-- implementação da fonte-->
   <!-- header-->
@@ -29,7 +49,6 @@
         <!-- display flex no <nav>, justify content: space-between; align-items: center;  padding-top: 30px;-->
         <h2>
         </h2>
-    
         <ul class='ul flex items-center'>
              <!-- UL display flex align-items: center;  padding-top: 30px;-->
           <a href='../index.html'class='text-white text-sm my-0 mx-[25px]'>HOME</a>
@@ -42,7 +61,7 @@
         <!-- BANNER display flex justify-content: center -->
         <div class='banner-texto m-[35px] text-center py-0 px-[90px]'>
            <!-- BANNER-TEXTO margin: 35px; text-align: center; padding: 0 90px; -->
-          <h3 class="font-bold text-[#535845] text-[50px] transition ease-in-out delay-150 hover:-translate-y-1 hover:scale-110 hover: duration-300">MISSAS DO DONMIGO</h3>
+          <h3 class="font-bold text-[#535845] text-[50px] transition ease-in-out delay-150 hover:-translate-y-1 hover:scale-110 hover: duration-300">MISSAS DO DOMINGO</h3>
           <!--<button class="transition ease-in-out delay-150 bg-blue-500 hover:-translate-y-1 hover:scale-110 hover:bg-indigo-500 duration-300 ...">
   Save Changes
 </button>-->
@@ -68,7 +87,7 @@
             <!-- COLUMN 1: display grid 1fr, gap 60px-->
             <h4 class="text-[#80914b] font-bold text-[35px]">Zona Leste / Praia</h4>
             <!-- H4 text-color: #80914b, negrito, font size: 35 px-->
-            <h5 class="mb-[5px] text-[#bdab92] font-bold text-[25px]">Turno da Manhã</h5>
+            <h5 class="mb-[5px] text-grayish-orange font-bold text-[25px]">Turno da Manhã</h5>
             <!-- H5 text-color: #bdab92, negrito, font size: 25 px; margin-bottom: 5px-->
             </div>
             <table class="table-auto sm:w-full sm:border-collapse">
@@ -76,29 +95,29 @@
                 <tbody>
                     <!-- <TD> padding 10px, text aligh: left-->
                     <tr>
-                        <td class="bg-[#eee5d9] text-left p-[10px]">6h00</td>
+                        <td class="bg-pale-orange text-left p-[10px]">6h00</td>
                         <td class="text-left p-[10px]">Santuário Imaculada Conceição</td>
-                        <td class="text-[#bdab92] text-left p-[10px]">Tambauzinho</td>
+                        <td class="text-grayish-orange text-left p-[10px]">Tambauzinho</td>
                     </tr>
                     <tr>
-                        <td class="bg-[#eee5d9] text-left p-[10px]">7h00</td>
+                        <td class="bg-pale-orange text-left p-[10px]">7h00</td>
                         <td  class=" p-[10px]">Com. Doce Mãe de Deus</td>
-                        <td class="text-[#bdab92] text-left p-[10px]">Bessa</td>
+                        <td class="text-grayish-orange text-left p-[10px]">Bessa</td>
                     </tr>
                     <tr>
-                        <td class="bg-[#eee5d9] text-left p-[10px]">7h00</td>
+                        <td class="bg-pale-orange text-left p-[10px]">7h00</td>
                         <td class="text-left p-[10px]">Com. N. Sra do Carmo (Maná)</td>
-                        <td class="text-[#bdab92] text-left p-[10px]">Miramar</td>
+                        <td class="text-grayish-orange text-left p-[10px]">Miramar</td>
                     </tr>
                     <tr>
-                        <td class="bg-[#eee5d9] text-left p-[10px]">7h30</td>
+                        <td class="bg-pale-orange text-left p-[10px]">7h30</td>
                         <td class="text-left p-[10px]">Com. Mel de Deus</td>
-                        <td class="text-[#bdab92] text-left p-[10px]">Cabo Branco</td>
+                        <td class="text-grayish-orange text-left p-[10px]">Cabo Branco</td>
                     </tr>
                     <tr>
-                        <td class="bg-[#eee5d9] text-left p-[10px]">9h00</td>
+                        <td class="bg-pale-orange text-left p-[10px]">9h00</td>
                         <td class="text-left p-[10px]">Obra Lumen - Casa Sta Teresa de Calcutá</td>
-                        <td class="text-[#bdab92] text-left p-[10px]">Tambauzinho</td>
+                        <td class="text-grayish-orange text-left p-[10px]">Tambauzinho</td>
                     </tr>
                 </tbody>
                 
@@ -106,46 +125,46 @@
         </div>
         <div class="column2 grid-cols-1">
             <!-- COLUMN 2: display grid 1fr-->
-            <h5 class="mb-[5px] mt-[15px] text-[#bdab92] font-bold text-[25px]">Turno da Tarde/ Noite</h5>
+            <h5 class="mb-[5px] mt-[15px] text-grayish-orange font-bold text-[25px]">Turno da Tarde/ Noite</h5>
             <!-- H5 text-color: #bdab92, negrito, font size: 25 px; margin-bottom: 5px, margin top: 15px-->
             <table class="table-auto">
                 <thead></thead>
                 <tbody>
                     <!-- <TD> padding 10px, text aligh: left-->
                     <tr>
-                        <td class="bg-[#eee5d9] text-left p-[10px]">17h00</td>
+                        <td class="bg-pale-orange text-left p-[10px]">17h00</td>
                         <td class="text-left p-[10px]">Com. Cat. Nova Berith</td>
-                        <td class="text-[#bdab92] text-left p-[10px]">Altiplano</td>
+                        <td class="text-grayish-orange text-left p-[10px]">Altiplano</td>
                     </tr>
                     <tr>
-                        <td class="bg-[#eee5d9] text-left p-[10px]">17h00</td>
+                        <td class="bg-pale-orange text-left p-[10px]">17h00</td>
                         <td class="text-left p-[10px]">Par. N. Sra. Auxiliadora dos Cristãos</td>
-                        <td class="text-[#bdab92] text-left p-[10px]">Bessa</td>
+                        <td class="text-grayish-orange text-left p-[10px]">Bessa</td>
                     </tr>
                     <tr>
-                        <td class="bg-[#eee5d9] text-left p-[10px]">17h00</td>
+                        <td class="bg-pale-orange text-left p-[10px]">17h00</td>
                         <td class="text-left p-[10px]">Par. S. Pedro S. Paulo</td>
-                        <td class="text-[#bdab92] text-left p-[10px]">Brisamar</td>
+                        <td class="text-grayish-orange text-left p-[10px]">Brisamar</td>
                     </tr>
                     <tr>
-                        <td class="bg-[#eee5d9] text-left p-[10px]">17h00</td>
+                        <td class="bg-pale-orange text-left p-[10px]">17h00</td>
                         <td class="text-left p-[10px]">Par. N. Sra. de Guadalupe</td>
-                        <td class="text-[#bdab92] text-left p-[10px]">Cabo Branco</td>
+                        <td class="text-grayish-orange text-left p-[10px]">Cabo Branco</td>
                     </tr>
                     <tr>
-                        <td class="bg-[#eee5d9] text-left p-[10px]">17h00</td>
+                        <td class="bg-pale-orange text-left p-[10px]">17h00</td>
                         <td class="text-left p-[10px]">Par. S. Pedro Pescador</td>
-                        <td class="text-[#bdab92] text-left p-[10px]">Manaira</td>
+                        <td class="text-grayish-orange text-left p-[10px]">Manaira</td>
                     </tr>
                     <tr>
-                        <td class="bg-[#eee5d9] text-left p-[10px]">17h00</td>
+                        <td class="bg-pale-orange text-left p-[10px]">17h00</td>
                         <td class="text-left p-[10px]">Par. S. Antônio de Lisboa</td>
-                        <td class="text-[#bdab92] text-left p-[10px]">Tambaú</td>
+                        <td class="text-grayish-orange text-left p-[10px]">Tambaú</td>
                     </tr>
                     <tr>
-                        <td class="bg-[#eee5d9] text-left p-[10px]">17h30</td>
+                        <td class="bg-pale-orange text-left p-[10px]">17h30</td>
                         <td class="p-[10px] text-left">Par. S. Pedro Pescador</td>
-                        <td class="text-[#bdab92] text-left p-[10px]">Jd. Oceania</td>
+                        <td class="text-grayish-orange text-left p-[10px]">Jd. Oceania</td>
                     </tr>
                 </tbody>
             </table>
@@ -164,7 +183,7 @@
             <!-- COLUMN 1: display grid 1fr, gap 60px-->
             <h4 class="text-[#796858] font-bold text-[35px]">Zona Norte</h4>
             <!-- H4 text-color: #796858, negrito, font size: 35 px-->
-            <h5 class="mb-[5px] text-[#718352] font-bold text-[25px]">Turno da Manhã</h5>
+            <h5 class="mb-[5px] text-desaturated-dark-green font-bold text-[25px]">Turno da Manhã</h5>
             <!-- H5 text-color: #718352, negrito, font size: 25 px; margin-bottom: 5px-->
             </div>
             <table class="table-auto">
@@ -172,50 +191,50 @@
                 <tbody>
                     <!-- <TD> padding 10px, text aligh: left-->
                     <tr>
-                        <td class="bg-[#d7e6a998] text-left p-[10px]">6h00</td>
+                        <td class="bg-extra-light-green text-left p-[10px]">6h00</td>
                         <td class="text-left p-[10px]">Lar da Providência</td>
-                        <td class="text-[#688e26] text-left p-[10px]">B. dos Estados</td>
+                        <td class="text-dark-green text-left p-[10px]">B. dos Estados</td>
                     </tr>
                     <tr>
-                        <td class="bg-[#d7e6a998] text-left p-[10px]">11h30</td>
+                        <td class="bg-extra-light-green text-left p-[10px]">11h30</td>
                         <td class="text-left p-[10px]">Igr. da Misericórdia</td>
-                        <td class="text-[#688e26] text-left p-[10px]">Centro</td>
+                        <td class="text-dark-green text-left p-[10px]">Centro</td>
                     </tr>
                     <tr>
-                        <td class="bg-[#d7e6a998] text-left p-[10px]">12h00</td>
+                        <td class="bg-extra-light-green text-left p-[10px]">12h00</td>
                         <td class="text-left p-[10px]">Catedral N. Sra. das Neves</td>
-                        <td class="text-[#688e26] text-left p-[10px]">Centro</td>
+                        <td class="text-dark-green text-left p-[10px]">Centro</td>
                     </tr>
                 </tbody>
             </table>
         </div>
         <div class="column2 grid grid-cols-1">
             <!-- COLUMN 2: display grid 1fr-->
-            <h5 class="mb-[5px] mt-[15px] text-[#718352] font-bold text-[25px]">Turno da Tarde/ Noite</h5>
+            <h5 class="mb-[5px] mt-[15px] text-desaturated-dark-green font-bold text-[25px]">Turno da Tarde/ Noite</h5>
             <!-- H5 text-color: #718352, negrito, font size: 25 px; margin-bottom: 5px, margin top: 15px-->
             <table class="table-auto">
                 <thead></thead>
                 <tbody>
                     <!-- <TD> padding 10px, text aligh: left-->
                     <tr>
-                        <td class="bg-[#d7e6a998] text-left p-[10px]">17h00</td>
+                        <td class="bg-extra-light-green text-left p-[10px]">17h00</td>
                         <td class="text-left p-[10px]">Par. Santa Júlia</td>
-                        <td class="text-[#688e26] text-left p-[10px]">Torre</td>
+                        <td class="text-dark-green text-left p-[10px]">Torre</td>
                     </tr>
                     <tr>
-                        <td class="bg-[#d7e6a998] text-left p-[10px]">18h15</td>
+                        <td class="bg-extra-light-green text-left p-[10px]">18h15</td>
                         <td class="text-left p-[10px]">Com. Filhos da Misericórdia</td>
-                        <td class="text-[#688e26] text-left p-[10px]">Ipês</td>
+                        <td class="text-dark-green text-left p-[10px]">Ipês</td>
                     </tr>
                     <tr>
-                        <td class="bg-[#d7e6a998] text-left p-[10px]">18h30</td>
+                        <td class="bg-extra-light-green text-left p-[10px]">18h30</td>
                         <td class="text-left p-[10px]">Par. Sto. Inácio de Loyola</td>
-                        <td class="text-[#688e26] text-left p-[10px]">Alto do Céu</td>
+                        <td class="text-dark-green text-left p-[10px]">Alto do Céu</td>
                     </tr>
                     <tr>
-                        <td class="bg-[#d7e6a998] text-left p-[10px]">19h00</td>
+                        <td class="bg-extra-light-green text-left p-[10px]">19h00</td>
                         <td class="text-left p-[10px]">Igreja São Gonçalo</td>
-                        <td class="text-[#688e26] text-left p-[10px]">Torre</td>
+                        <td class="text-dark-green text-left p-[10px]">Torre</td>
                     </tr>
                 </tbody>
             </table>
@@ -234,7 +253,7 @@
             <!-- COLUMN 1: display grid 1fr, gap 60px-->
             <h4 class="text-[#cc9766] font-bold text-[35px]">Zona Oeste</h4>
             <!-- H4 text-color: #cc9766, negrito, font size: 35 px-->
-            <h5 class="mb-[5px] text-[#af8f7d] font-bold text-[25px]">Turno da Manhã</h5>
+            <h5 class="mb-[5px] text-desaturated-dark-orange font-bold text-[25px]">Turno da Manhã</h5>
             <!-- H5 text-color: #af8f7d, negrito, font size: 25 px; margin-bottom: 5px-->
             </div>
             <table class="table-auto">
@@ -242,30 +261,30 @@
                 <tbody>
                     <tr>
                         <!-- <TD> padding 10px, text aligh: left-->
-                        <td class="bg-[#ddcec598] text-left [10px]">6h30</td>
+                        <td class="bg-extra-light-grayish-orange text-left [10px]">6h30</td>
                         <td class="p-[10px] text-left">Casa de Acolhimento Bom Pastor</td>
-                        <td class="text-[#9c7a5e] text-left p-[10px]">Jaguaribe</td>
+                        <td class="text-dark-orange text-left p-[10px]">Jaguaribe</td>
                     </tr>
                 </tbody>
             </table>
         </div>
         <div class="column2 grid grid-cols-1">
             <!-- COLUMN 1: display grid 1fr-->
-            <h5 class="mb-[5px] mt-[15px] text-[#af8f7d] font-bold text-[25px]">Turno da Tarde/ Noite</h5>
+            <h5 class="mb-[5px] mt-[15px] text-desaturated-dark-orange font-bold text-[25px]">Turno da Tarde/ Noite</h5>
             <!-- H5 text-color: #af8f7d, negrito, font size: 25 px; margin-bottom: 5px, margin top: 15px-->
             <table class="table-auto">
                 <thead></thead>
                 <tbody>
                     <tr>
                         <!-- <TD> padding 10px, text aligh: left-->
-                        <td class="bg-[#ddcec598] text-left p-[10px]">17h00</td>
+                        <td class="bg-extra-light-grayish-orange text-left p-[10px]">17h00</td>
                         <td class="p-[10px] text-left">Casa de Acolhimento Bom Pastor</td>
-                        <td class="text-[#9c7a5e] text-left p-[10px]">Jaguaribe</td>
+                        <td class="text-dark-orange text-left p-[10px]">Jaguaribe</td>
                     </tr>
                     <tr>
-                        <td class="bg-[#ddcec598] text-left p-[10px]">19h30</td>
+                        <td class="bg-extra-light-grayish-orange text-left p-[10px]">19h30</td>
                         <td class="p-[10px] text-left">Par. Sagrado Coração de Jesus - Santuário N. Sra. das Graças</td>
-                        <td class="text-[#9c7a5e] text-left p-[10px]">Mandacaru</td>
+                        <td class="text-dark-orange text-left p-[10px]">Mandacaru</td>
                     </tr>
                 </tbody>
             </table>
@@ -284,7 +303,7 @@
             <!-- COLUMN 1: display grid 1fr, gap 60px-->
             <h4 class="text-[#223b27] font-bold text-[35px]">Zona Sul</h4>
             <!-- H4 text-color: #223b27, negrito, font size: 35 px-->
-            <h5 class="mb-[5px] text-[#415d43] font-bold text-[25px]">Turno da Manhã</h5>
+            <h5 class="mb-[5px] text-very-dark-grayish-lime-green font-bold text-[25px]">Turno da Manhã</h5>
             <!-- H5 text-color: #415d43, negrito, font size: 25 px; margin-bottom: 5px-->
             </div>
             <table class="table-auto">
@@ -292,55 +311,55 @@
                 <tbody>
                     <!-- <TD> padding 10px, text aligh: left-->
                     <tr>
-                        <td class="bg-[#3b776098] p-[10px] text-left">6h30</td>
+                        <td class="bg-grayish-lime-green p-[10px] text-left">6h30</td>
                         <td class="p-[10px] text-left">Par. São João Batista</td>
-                        <td class="text-[#136f3c] text-left p-[10px]">Costa e Silva</td>
+                        <td class="text-very-dark-cyan text-left p-[10px]">Costa e Silva</td>
                     </tr>
                     <tr>
-                        <td class="bg-[#3b776098] text-left p-[10px]">11h30</td>
+                        <td class="bg-grayish-lime-green text-left p-[10px]">11h30</td>
                       <td class="text-left p-[10px]">Seminário Arquidiocesano da Paraíba</td>
-                      <td class="text-[#136f3c] text-left p-[10px]">Castelo Branco</td>
+                      <td class="text-very-dark-cyan text-left p-[10px]">Castelo Branco</td>
                   </tr>
                   <tr>
-                    <td class="bg-[#3b776098] text-left p-[10px]">12h30</td>
+                    <td class="bg-grayish-lime-green text-left p-[10px]">12h30</td>
                     <td class="p-[10px] text-left">Com. Cat. Consolação Misericordiosa</td>
-                    <td class="text-[#136f3c] text-left p-[10px]">Castelo Branco</td>
+                    <td class="text-very-dark-cyan text-left p-[10px]">Castelo Branco</td>
                 </tr>
                 </tbody>
             </table>
         </div>
         <div class="column2 grid grid-cols-1">
             <!-- COLUMN 2: display grid 1fr-->
-            <h5 class="mb-[5px] mt-[15px] text-[#415d43] font-bold text-[25px]">Turno da Tarde/ Noite</h5>
+            <h5 class="mb-[5px] mt-[15px] text-very-dark-grayish-lime-green font-bold text-[25px]">Turno da Tarde/ Noite</h5>
             <!-- H5 text-color: #415d43, negrito, font size: 25 px; margin-bottom: 5px, margin top: 15px-->
             <table class="table-auto">
                 <thead></thead>
                 <tbody>
                     <!-- <TD> padding 10px, text aligh: left-->
                     <tr>
-                        <td class="bg-[#3b776098] text-left p-[10px]">18h00</td>
+                        <td class="bg-grayish-lime-green text-left p-[10px]">18h00</td>
                         <td class="p-[10px] text-left">Com. Servos de Maria do Coração de Jesus</td>
-                        <td class="text-[#136f3c] text-left p-[10px]">Conde</td>
+                        <td class="text-very-dark-cyan text-left p-[10px]">Conde</td>
                     </tr>
                     <tr>
-                        <td class="bg-[#3b776098] text-left p-[10px]">18h45</td>
+                        <td class="bg-grayish-lime-green text-left p-[10px]">18h45</td>
                         <td class="p-[10px] text-left">Par. Jesus Cristo Rei</td>
-                        <td class="text-[#136f3c] text-left p-[10px]">Mangabeira</td>
+                        <td class="text-very-dark-cyan text-left p-[10px]">Mangabeira</td>
                     </tr>
                     <tr>
-                        <td class="bg-[#3b776098] text-left p-[10px]">19h00</td>
+                        <td class="bg-grayish-lime-green text-left p-[10px]">19h00</td>
                       <td class="p-[10px] text-left"> Com. Doce Mãe de Deus - Casa Mãe</td>
-                      <td class="text-[#136f3c] text-left p-[10px]">Geisel</td>
+                      <td class="text-very-dark-cyan text-left p-[10px]">Geisel</td>
                   </tr>
                   <tr>
-                    <td class="bg-[#3b776098] text-left p-[10px]">19h00</td>
+                    <td class="bg-grayish-lime-green text-left p-[10px]">19h00</td>
                     <td class="p-[10px] text-left">Par. de Aparecida</td>
-                    <td class="text-[#136f3c] text-left p-[10px]">Valentina</td>
+                    <td class="text-very-dark-cyan text-left p-[10px]">Valentina</td>
                 </tr>
                 <tr>
-                    <td class="bg-[#3b776098] text-left p-[10px]">19h30</td>
+                    <td class="bg-grayish-lime-green text-left p-[10px]">19h30</td>
                   <td class="p-[10px] text-left">Par. Sto. Antônio do Menino Deus</td>
-                  <td class="text-[#136f3c] text-left p-[10px]">Jd. Cid. Univers</td>
+                  <td class="text-very-dark-cyan text-left p-[10px]">Jd. Cid. Univers</td>
               </tr>
                 </tbody>
             </table>
@@ -351,4 +370,4 @@
   <!--FIM DA ZS-->
 </body>
 
-</html>
+</html>""
