@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Horários das Missas</title>
+    <!-- Link do Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css"
+        integrity="sha512-5A8nwdMOWrSz20fDsjczgUidUBR8liPYU+WymTZP1lmY9G6Oc7HlZv156XqnsgNUzTyMefFTcsFH/tnJE/+xBg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400..700;1,400..700&display=swap"
+        rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Lora', serif;
+        }
+    </style>
+</head>
+
+<body class="bg-[#c8c9cb31]">
+    <!-- Header -->
+    <header class="bg-cover bg-fixed bg-center" style="background-image: url('img/gptigr.jpeg');">
+      <div class="bg-[rgba(211,204,194,0.8)] mx-auto px-[5%] w-full">
+          <nav class="flex items-center justify-end pt-8">
+              <h2 class="hidden">Logo</h2>
+              <ul class="flex items-center space-x-8">
+                  <a href="index.html" class="text-white uppercase text-sm hover:text-[#c4cea1]">Home</a>
+                  <a href="pages/cadastro.html" class="button bg-[#bbc191] text-white py-3 px-5 rounded-lg cursor-pointer hover:bg-[#80914b] transition duration-500 text-sm">
+                    CADASTRO
+                </a>
+                
+
+              </ul>
+          </nav>
+          <section class="flex justify-center text-center py-32">
+              <div>
+                <h1 class="text-[#9f7a5b] text-8xl font-light mt-32">Horários das Missas</h1>
+                  <div class="bg-[rgba(211, 211, 211, 0.5)] rounded-lg p-6 mt-10">
+                    <p class="bg-gray-200 bg-opacity-50 text-xl text-black/[0.6] p-4 rounded">
+                      O site perfeito para se informar sobre todas as missas na cidade de João Pessoa e seus respectivos horários
+                  </p>                  
+                  
+                  </div>
+                  <a href="pages/cadastro.html"
+                  class="button bg-[#bbc191] text-white py-3 px-5 rounded-lg cursor-pointer hover:bg-[#80914b] transition duration-500 mt-10 inline-block">
+                  Cadastre-se
+               </a>
+               
+              </div>
+          </section>
+      </div>
+  </header>
+  
+  
+
+    <!-- Main 1 -->
+    <section class="bg-[rgba(237,224,212,0.3)] py-14">
+        <div class="max-w-[1400px] mx-auto flex flex-col md:flex-row items-center gap-8 px-[5%]">
+            <div class="md:w-1/2">
+                <h3 class="text-5xl font-light text-black">Bem-vindo(a)</h3>
+                <p class="text-black/[0.6] mt-4 mb-6">Seja bem-vindo ao nosso portal de horários de missas. Aqui, você
+                    encontra informações atualizadas para participar das celebrações em nossa comunidade.</p>
+                <a href="pages/cadastro.html"
+                    class="bg-[#bbc191] text-white py-3 px-5 rounded-lg cursor-pointer hover:bg-[#80914b] transition">
+                    Cadastre-se
+                </a>
+            </div>
+            <div class="md:w-1/2">
+                <img src="img/arte.jpeg" alt="" class="rounded-2xl w-4/5 mx-auto">
+            </div>
+        </div>
+    </section>
+
+    <!-- Main 2 -->
+    <section class="bg-[rgba(197,211,151,0.5)] py-14">
+        <div class="max-w-[1400px] mx-auto flex flex-col md:flex-row items-center gap-8 px-[5%]">
+            <div class="md:w-1/2">
+                <iframe class="rounded-lg w-full md:w-[450px] h-[400px] border-none"
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d4708.1031511956!2d-34.84323668886854!3d-7.122861267797875!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x7acddaa410f386f%3A0x8bde4edcc87e54ed!2sSantu%C3%A1rio%20de%20Nossa%20Senhora%20da%20Imaculada%20Concei%C3%A7%C3%A3o!5e0!3m2!1spt-BR!2sbr!4v1725209448075!5m2!1spt-BR!2sbr"
+                    allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
+            <div class="md:w-1/2">
+                <h3 class="text-5xl font-light text-black">Encontre Paz e Reflexão</h3>
+                <p class="text-black/[0.6] mt-4">Nosso site reúne os horários das missas de diferentes paróquias,
+                    proporcionando a você a oportunidade de escolher o melhor momento para se aproximar de Deus.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Depoimentos -->
+    <section class="bg-[rgba(237,224,212,0.3)] py-14">
+        <div class="max-w-[1400px] mx-auto text-center px-[5%]">
+            <h3 class="text-5xl font-light">Depoimentos</h3>
+            <p class="text-black/[0.6] mt-6">Venha descobrir o que a comunidade está falando sobre nosso site!</p>
+            <section class="depoimentos">
+              <section class="depoimentos">
+                <div class="cards flex justify-center">
+                    <!-- card item 1 -->
+                    <div class="item transition duration-300 bg-[#e4ceaf] mx-3 my-4 rounded-lg text-center w-[450px] hover:bg-[#b08968] hover:scale-105 group">
+                        <img src='img/DAVILEITEPROFILE.jfif' alt='' class="rounded-full w-12 mx-auto my-2">
+                        <p class="nome-user transition duration-300 text-lg mb-4 font-normal text-[#0000009c] group-hover:text-white">Davi Leite</p>
+                        <p class="user-depoim mb-7 text-sm px-4 text-[#0000009c] group-hover:text-white">"Encontrei no site a ajuda que precisava para nunca mais perder uma missa importante."</p>
+                        <div class="avaliaçoes border-t-2 border-[#71767a23] pt-3">
+                            <i class="fa fa-star text-[#9f7a5b] text-lg group-hover:text-white"></i>
+                            <i class="fa fa-star text-[#9f7a5b] text-lg group-hover:text-white"></i>
+                            <i class="fa fa-star text-[#9f7a5b] text-lg group-hover:text-white"></i>
+                            <i class="fa fa-star text-[#9f7a5b] text-lg group-hover:text-white"></i>
+                            <i class="fa fa-star-o text-[#9f7a5b] text-lg group-hover:text-white"></i>
+                        </div>
+                    </div>
+                    <!-- fim card item 1 -->
+            
+                    <!-- card item 2 -->
+                    <div class="item transition duration-300 bg-[#e4ceaf] mx-3 my-4 rounded-lg text-center w-[450px] hover:bg-[#b08968] hover:scale-105 group">
+                        <img src='img/DAVICESARPROFILE1.jfif' alt='' class="rounded-full w-12 mx-auto my-2">
+                        <p class="nome-user transition duration-300 text-lg mb-4 font-normal text-[#0000009c] group-hover:text-white">Davi César</p>
+                        <p class="user-depoim mb-7 text-sm px-4 text-[#0000009c] group-hover:text-white">"A organização e facilidade de navegação me permitem planejar melhor minha rotina espiritual."</p>
+                        <div class="avaliaçoes border-t-2 border-[#71767a23] pt-3">
+                            <i class="fa fa-star text-[#9f7a5b] text-lg group-hover:text-white"></i>
+                            <i class="fa fa-star text-[#9f7a5b] text-lg group-hover:text-white"></i>
+                            <i class="fa fa-star text-[#9f7a5b] text-lg group-hover:text-white"></i>
+                            <i class="fa fa-star text-[#9f7a5b] text-lg group-hover:text-white"></i>
+                            <i class="fa fa-star-half-o text-[#9f7a5b] text-lg group-hover:text-white"></i>
+                        </div>
+                    </div>
+                    <!-- fim card item 2 -->
+                </div>
+            </section>
+            
+          
+          
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <section class="bg-[rgba(187,193,145,0.8)] py-14">
+      <div class="max-w-[1400px] mx-auto text-center px-5">
+        <h3 class="text-white font-light text-5xl">Nossas redes!</h3>
+          <p class="text-white font-light mt-2">Nos siga para ficar por dentro de qualquer atualização e não perder nada!</p>
+          <div class="flex justify-center mt-6">
+              <i class="fa fa-instagram text-white text-4xl transition duration-300 mx-5 hover:text-[#adc178]" aria-hidden="true"></i>
+              <i class="fa fa-facebook-official text-white text-4xl transition duration-300 mx-5 hover:text-[#adc178]" aria-hidden="true"></i>
+              <i class="fa fa-twitter-square text-white text-4xl transition duration-300 mx-5 hover:text-[#adc178]" aria-hidden="true"></i>
+              <i class="fa fa-linkedin-square text-white text-4xl transition duration-300 mx-5 hover:text-[#adc178]" aria-hidden="true"></i>
+          </div>
+          <p class="text-white font-light mt-8">
+              By <a href="https://www.linkedin.com/in/mariana-dos-santos-sarinho-7a15a52bb/" class="text-white hover:text-[#cbe18e] underline"> @MarianaSarinho</a> 
+              <a href="https://www.linkedin.com/in/maria-clara-almeida-a39768300/" class="text-white hover:text-[#cbe18e] underline"> @MariaClara</a> 
+              <a href="https://www.linkedin.com/in/clara-nunes-de-alcantara/" class="text-white hover:text-[#cbe18e] underline"> @ClaraAlcantara</a>
+          </p>
+      </div>
+  </section>
